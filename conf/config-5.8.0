@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 5.8.0-rc7 Kernel Configuration
+# Linux/x86 5.8.0 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (GCC) 9.3.0"
 CONFIG_CC_IS_GCC=y
@@ -1771,6 +1771,7 @@ CONFIG_TUN=m
 # CONFIG_TUN_VNET_CROSS_LE is not set
 # CONFIG_VETH is not set
 # CONFIG_NLMON is not set
+# CONFIG_VSOCKMON is not set
 # CONFIG_ARCNET is not set
 
 #
@@ -3763,15 +3764,18 @@ CONFIG_SYNC_FILE=y
 # CONFIG_UIO is not set
 # CONFIG_VFIO is not set
 CONFIG_IRQ_BYPASS_MANAGER=m
-# CONFIG_VIRT_DRIVERS is not set
+CONFIG_VIRT_DRIVERS=y
+CONFIG_VBOXGUEST=m
 CONFIG_VIRTIO_MENU=y
 # CONFIG_VIRTIO_PCI is not set
 # CONFIG_VIRTIO_MMIO is not set
 # CONFIG_VDPA is not set
+CONFIG_VHOST_IOTLB=m
+CONFIG_VHOST=m
 CONFIG_VHOST_MENU=y
-# CONFIG_VHOST_NET is not set
-# CONFIG_VHOST_VSOCK is not set
-# CONFIG_VHOST_CROSS_ENDIAN_LEGACY is not set
+CONFIG_VHOST_NET=m
+CONFIG_VHOST_VSOCK=m
+CONFIG_VHOST_CROSS_ENDIAN_LEGACY=y
 
 #
 # Microsoft Hyper-V guest support
@@ -4138,6 +4142,7 @@ CONFIG_MISC_FILESYSTEMS=y
 # CONFIG_SYSV_FS is not set
 # CONFIG_UFS_FS is not set
 # CONFIG_EROFS_FS is not set
+# CONFIG_VBOXSF_FS is not set
 CONFIG_NETWORK_FILESYSTEMS=y
 CONFIG_NFS_FS=y
 CONFIG_NFS_V2=y
