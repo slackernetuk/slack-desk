@@ -1,0 +1,1 @@
+alias gnome-terminal='gnome-terminal --geometry=115x36+380+143'
