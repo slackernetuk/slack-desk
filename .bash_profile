@@ -1,3 +1,4 @@
 export LANG=en_GB.UTF-8
 export LC_COLLATE=C
 export GTK_CSD=1
+export MESA_LOADER_DRIVER_OVERRIDE=i965
